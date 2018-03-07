@@ -123,13 +123,13 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: 0;
+    margin-top: .5rem;
     margin-bottom: .5rem
 }
 
 p {
     margin-top: 0;
-    margin-bottom: 1rem
+    /*margin-bottom: 1rem*/
 }
 
 abbr[data-original-title],
@@ -675,8 +675,8 @@ pre code {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px
+    /*margin-right: -15px;*/
+    /*margin-left: -15px*/
 }
 
 .no-gutters {
@@ -1413,15 +1413,18 @@ pre code {
 .table {
     width: 100%;
     max-width: 100%;
-    margin-bottom: 1rem;
+    /*margin-bottom: 1rem;*/
     background-color: transparent
 }
 
 .table td,
 .table th {
-    padding: .75rem;
-    vertical-align: top;
+    /*padding: .75rem;*/
+    /*vertical-align: top;*/
     border-top: 1px solid #e9ecef
+}
+.table td .first-tr{
+    border-top: none!important;
 }
 
 .table thead th {
@@ -3868,7 +3871,7 @@ tbody.collapse.show {
 .card-body {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    padding: 1.25rem
+    /*padding: 1.25rem*/
 }
 
 .card-title {
@@ -4783,7 +4786,7 @@ button.list-group-item-dark.active {
 
 .close {
     float: right;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
     line-height: 1;
     color: #000;
@@ -4811,7 +4814,7 @@ button.close {
 
 .modal {
     position: fixed;
-    top: 0;
+    top: 100px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -4883,7 +4886,7 @@ button.close {
     align-items: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 15px;
+    /*padding: 15px;*/
     border-bottom: 1px solid #e9ecef
 }
 
@@ -4928,7 +4931,7 @@ button.close {
 
 @media (min-width:576px) {
     .modal-dialog {
-        max-width: 500px;
+        max-width: 650px;
         margin: 30px auto
     }
     .modal-sm {
@@ -4993,6 +4996,8 @@ button.close {
     content: "";
     border-width: 5px 5px 0;
     border-top-color: #000
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
 }
 
 .tooltip.bs-tooltip-auto[x-placement^=right],
